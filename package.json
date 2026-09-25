@@ -1,0 +1,22 @@
+{
+  "name": "jev-claude",
+  "version": "0.1.0",
+  "description": "JEV + Claude: calibrated guardrails for coding agents. TypeSafe Jev probabilities in, deterministic allow/warn/ask/block out.",
+  "license": "MIT",
+  "author": "Connectify.one (https://connectify.one)",
+  "homepage": "https://github.com/bruno-ship-it/jev-claude",
+  "repository": { "type": "git", "url": "https://github.com/bruno-ship-it/jev-claude.git" },
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "bin": {
+    "jev-guard-claude": "./bin/claude-hook.mjs",
+    "jev-guard-codex": "./bin/codex-hook.mjs"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check bin/claude-hook.mjs && node --check bin/codex-hook.mjs",
+    "install-codex": "node scripts/install-codex.mjs"
+  },
+  "keywords": ["jev", "typesafe", "claude-code", "codex", "guardrails", "agent-safety", "hooks"],
+  "dependencies": {}
+}
