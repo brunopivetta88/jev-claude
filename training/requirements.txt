@@ -1,0 +1,6 @@
+# Training only. Nothing in the plugin needs any of this, and the collector,
+# metrics, calibration and dataset modules run on the standard library alone.
+torch>=2.4
+transformers>=4.48        # ModernBERT needs >= 4.48
+onnx>=1.16
+onnxruntime>=1.18

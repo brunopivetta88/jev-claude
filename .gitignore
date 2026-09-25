@@ -1,0 +1,8 @@
+node_modules/
+.jev-guard/
+.env
+
+# Local Claude Code state — never published. Not to be confused with
+# .claude-plugin/, which is this plugin's manifest and must ship.
+.claude/
+.claude/settings.local.json

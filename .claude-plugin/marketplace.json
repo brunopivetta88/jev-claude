@@ -1,0 +1,19 @@
+{
+  "name": "jev-claude",
+  "owner": { "name": "Connectify.one", "url": "https://connectify.one" },
+  "description": "JEV + Claude: calibrated guardrails for coding agents.",
+  "plugins": [
+    {
+      "name": "jev-guard",
+      "source": "./",
+      "displayName": "JEV + Claude",
+      "description": "Reflex layer for Claude Code: Jev probabilities in, deterministic allow/warn/ask/block out.",
+      "version": "0.1.0",
+      "category": "security",
+      "author": { "name": "Connectify.one", "url": "https://connectify.one" },
+      "homepage": "https://github.com/bruno-ship-it/jev-claude",
+      "license": "MIT",
+      "keywords": ["guardrails", "safety", "jev", "typesafe"]
+    }
+  ]
+}

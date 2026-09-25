@@ -1,0 +1,28 @@
+{
+  "name": "jev-guard",
+  "displayName": "JEV + Claude",
+  "version": "0.1.0",
+  "description": "Calibrated guardrails for Claude Code: TypeSafe Jev probabilities in, deterministic allow/warn/ask/block out.",
+  "author": { "name": "Connectify.one", "url": "https://connectify.one" },
+  "homepage": "https://github.com/bruno-ship-it/jev-claude",
+  "repository": "https://github.com/bruno-ship-it/jev-claude",
+  "license": "MIT",
+  "keywords": ["guardrails", "safety", "jev", "typesafe", "policy"],
+  "hooks": "./hooks/hooks.json",
+  "commands": ["./commands/"],
+  "skills": "./skills/",
+  "userConfig": {
+    "typesafe_api_key": {
+      "type": "string",
+      "title": "TypeSafe API key",
+      "description": "Key from console.typesafe.ai. Without it the plugin runs on its deterministic rules only.",
+      "sensitive": true
+    },
+    "mode": {
+      "type": "string",
+      "title": "Mode",
+      "description": "shadow = evaluate and log only; enforce = decisions are applied.",
+      "default": "shadow"
+    }
+  }
+}
